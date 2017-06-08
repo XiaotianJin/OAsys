@@ -48,9 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attending\AttendingInfo.cs" />
      <Compile Include="Assets\Scripts\Attending\OnAttendingManager.cs" />
+     <Compile Include="Assets\Scripts\General\DCPieGraph.cs" />
+     <Compile Include="Assets\Scripts\General\DWEPieGraph.cs" />
      <Compile Include="Assets\Scripts\General\GeneralSetting.cs" />
      <Compile Include="Assets\Scripts\LeaveApproval\LeaveInfo.cs" />
      <Compile Include="Assets\Scripts\LeaveApproval\OnLeaveApprovalManager.cs" />
+     <Compile Include="Assets\Scripts\Login\OnLoginManager.cs" />
      <Compile Include="Assets\Scripts\PersonalInfo\OnPersonalInfoManager.cs" />
      <Compile Include="Assets\Scripts\PersonalInfo\PersonInfo.cs" />
  <Reference Include="UnityEngine.UI">
