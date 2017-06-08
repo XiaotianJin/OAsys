@@ -16,6 +16,7 @@ public class LeftPanelManager : MonoBehaviour
     private float _moveUnitDistance;
     private int _openedBtnIndex;
     private List<Btn> _btns;
+    private GameObject _rightPanel;
 	// Use this for initialization
 	void Start ()
     {
@@ -44,6 +45,7 @@ public class LeftPanelManager : MonoBehaviour
             _btns.Add(temp);
         }
         _openedBtnIndex = 0;
+        _rightPanel = GameObject.Find("RightPanel");
     }
 
     private void MoveBtns(int startIndexOfBtn, int moveCount)
@@ -75,7 +77,7 @@ public class LeftPanelManager : MonoBehaviour
 
     public void OnClickSystemIndexBtn()
     {
-        
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("IndexPanel");
     }
 
     public void OnClickTeachingDepartmentBtn()
@@ -185,6 +187,25 @@ public class LeftPanelManager : MonoBehaviour
     public void OnClickBackBtn()
     {
         
+    }
+
+    public void OnClickTeachInfoBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("TeacherInfoPanel");
+    }
+    public void OnClickCheckSchduleBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("CheckSchdulePanel");
+    }
+
+    public void OnClickCourseArrangementBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("CourseArrangementPanel");
+    }
+
+    public void OnClickEnpenseInfoBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("ExpenseInquiryPanel");
     }
     #endregion
 }

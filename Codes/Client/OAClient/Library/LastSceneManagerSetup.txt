@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/XTST.unity
+- path: Assets/Scenes/Cuixiaoliang.unity
   isLoaded: 1
   isActive: 1
