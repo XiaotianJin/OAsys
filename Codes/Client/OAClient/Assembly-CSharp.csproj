@@ -5,8 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{6FDCA549-4315-B8AF-5696-0CA0A92568CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -47,32 +46,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Attending\AttendingInfo.cs" />
-    <Compile Include="Assets\Scripts\Attending\OnAttendingManager.cs" />
-    <Compile Include="Assets\Scripts\General\GeneralSetting.cs" />
-    <Compile Include="Assets\Scripts\PersonalInfo\OnPersonalInfoManager.cs" />
-    <Compile Include="Assets\Scripts\PersonalInfo\PersonInfo.cs" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HoloLens">
-      <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VR">
-      <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\Scripts\Attending\AttendingInfo.cs" />
+     <Compile Include="Assets\Scripts\Attending\OnAttendingManager.cs" />
+     <Compile Include="Assets\Scripts\General\DCPieGraph.cs" />
+     <Compile Include="Assets\Scripts\General\DWEPieGraph.cs" />
+     <Compile Include="Assets\Scripts\General\GeneralSetting.cs" />
+     <Compile Include="Assets\Scripts\LeaveApproval\LeaveInfo.cs" />
+     <Compile Include="Assets\Scripts\LeaveApproval\OnLeaveApprovalManager.cs" />
+     <Compile Include="Assets\Scripts\Login\OnLoginManager.cs" />
+     <Compile Include="Assets\Scripts\PersonalInfo\OnPersonalInfoManager.cs" />
+     <Compile Include="Assets\Scripts\PersonalInfo\PersonInfo.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>D:/IDEs/unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -82,4 +86,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>

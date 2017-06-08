@@ -39,7 +39,10 @@ public class OnAttendingManager : MonoBehaviour {
         foreach (var single in res)
         {
             Debug.Log(single.toString());
-            ShowText.text += single.toString() + "\n";
+            if (single.level == level || level == 0)
+            {
+                ShowText.text += single.toString() + "\n";
+            }
         }
     }
 
