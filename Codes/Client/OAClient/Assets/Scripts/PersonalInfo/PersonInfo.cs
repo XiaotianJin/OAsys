@@ -38,9 +38,16 @@ namespace Assets.Scripts.PersonalInfo
             return sb.ToString();
         }
 
+        public static List<PersonInfo> personDatabase = new List<PersonInfo>();
+
         public static PersonInfo GetPersonalInfo(string name)
         {
-            return new PersonInfo();
+            if (personDatabase.Count <= 0)
+            {
+                personDatabase.Add(new PersonInfo());
+            }
+
+            return personDatabase[0];
         }
     }
 }

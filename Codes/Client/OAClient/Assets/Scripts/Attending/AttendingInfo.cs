@@ -65,10 +65,13 @@ namespace Assets.Scripts.Attending
                 count--;
 
                 res.Add(t);
+                Attendings.Add(t);
             }
 
             return res;
         }
+
+        public static List<AttendingInfo> Attendings = new List<AttendingInfo>();
 
         public string toString()
         {
