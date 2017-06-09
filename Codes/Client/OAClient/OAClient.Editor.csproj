@@ -172,6 +172,8 @@
     <None Include="Assets\Scripts\Txt\CourseInfo.txt" />
     <None Include="Assets\Scripts\Txt\ExpenseInquiry.txt" />
     <None Include="Assets\Scripts\Txt\InquiryInfo.txt" />
+    <None Include="Assets\Scripts\Txt\LeaveApproval.txt" />
+    <None Include="Assets\Scripts\Txt\ReimbursementType.txt" />
     <None Include="Assets\Scripts\Txt\TeacherInfo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -102,11 +102,17 @@
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\Scripts\Attending\AttendingInfo.cs" />
     <Compile Include="Assets\Scripts\Attending\OnAttendingManager.cs" />
+    <Compile Include="Assets\Scripts\General\DCPieGraph.cs" />
+    <Compile Include="Assets\Scripts\General\DWEPieGraph.cs" />
     <Compile Include="Assets\Scripts\General\GeneralSetting.cs" />
     <Compile Include="Assets\Scripts\General\GridLayoutConfig.cs" />
+    <Compile Include="Assets\Scripts\LeaveApproval\LeaveInfo.cs" />
+    <Compile Include="Assets\Scripts\LeaveApproval\OnLeaveApprovalManager.cs" />
     <Compile Include="Assets\Scripts\LeftPanelManager.cs" />
+    <Compile Include="Assets\Scripts\Login\OnLoginManager.cs" />
     <Compile Include="Assets\Scripts\PersonalInfo\OnPersonalInfoManager.cs" />
     <Compile Include="Assets\Scripts\PersonalInfo\PersonInfo.cs" />
+    <Compile Include="Assets\Scripts\ReimbursementTypeManager.cs" />
     <Compile Include="Assets\Scripts\RightPanelManager.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +132,8 @@
     <None Include="Assets\Scripts\Txt\CourseInfo.txt" />
     <None Include="Assets\Scripts\Txt\ExpenseInquiry.txt" />
     <None Include="Assets\Scripts\Txt\InquiryInfo.txt" />
+    <None Include="Assets\Scripts\Txt\LeaveApproval.txt" />
+    <None Include="Assets\Scripts\Txt\ReimbursementType.txt" />
     <None Include="Assets\Scripts\Txt\TeacherInfo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,8 +17,9 @@ public class LeftPanelManager : MonoBehaviour
     private int _openedBtnIndex;
     private List<Btn> _btns;
     private GameObject _rightPanel;
-	// Use this for initialization
-	void Start ()
+    private GameObject _currentLocationText;
+    // Use this for initialization
+    void Start ()
     {
 		Initialize();
 	}
@@ -46,6 +47,7 @@ public class LeftPanelManager : MonoBehaviour
         }
         _openedBtnIndex = 0;
         _rightPanel = GameObject.Find("RightPanel");
+        _currentLocationText = GameObject.Find("CurrentLocation");
     }
 
     private void MoveBtns(int startIndexOfBtn, int moveCount)
@@ -78,6 +80,7 @@ public class LeftPanelManager : MonoBehaviour
     public void OnClickSystemIndexBtn()
     {
         _rightPanel.GetComponent<RightPanelManager>().ActivePanel("IndexPanel");
+        _currentLocationText.GetComponent<Text>().text = "";
     }
 
     public void OnClickTeachingDepartmentBtn()
@@ -186,26 +189,70 @@ public class LeftPanelManager : MonoBehaviour
 
     public void OnClickBackBtn()
     {
-        
+        Application.Quit();
     }
 
     public void OnClickTeachInfoBtn()
     {
         _rightPanel.GetComponent<RightPanelManager>().ActivePanel("TeacherInfoPanel");
+        _currentLocationText.GetComponent<Text>().text = "教师简介";
     }
     public void OnClickCheckSchduleBtn()
     {
         _rightPanel.GetComponent<RightPanelManager>().ActivePanel("CheckSchdulePanel");
+        _currentLocationText.GetComponent<Text>().text = "查看课表";
     }
 
     public void OnClickCourseArrangementBtn()
     {
         _rightPanel.GetComponent<RightPanelManager>().ActivePanel("CourseArrangementPanel");
+        _currentLocationText.GetComponent<Text>().text = "课程安排";
     }
 
     public void OnClickEnpenseInfoBtn()
     {
         _rightPanel.GetComponent<RightPanelManager>().ActivePanel("ExpenseInquiryPanel");
+        _currentLocationText.GetComponent<Text>().text = "报销单详情";
+    }
+
+    public void OnClickAttendanceBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("AttendingRightPanel");
+        _currentLocationText.GetComponent<Text>().text = "个人考勤";
+    }
+    public void OnDWEBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("DetailsOfWorkExpensesStatisticsPanel");
+        _currentLocationText.GetComponent<Text>().text = "报销单统计";
+    }
+    public void OnClickDCFBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("DepartmentalClassificationStatisticsPanel");
+        _currentLocationText.GetComponent<Text>().text = "部门分类统计";
+    }
+    public void OnPersonInfoBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("PersonalInfoPanel");
+        _currentLocationText.GetComponent<Text>().text = "个人信息";
+    }
+
+    public void OnClickReimbursementTypeBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("ReimbursementTypePanel");
+        _currentLocationText.GetComponent<Text>().text = "报销类型";
+    }
+
+    public void OnClickEmployeeLeavePanel()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("EmployeeLeavePanel");
+        _currentLocationText.GetComponent<Text>().text = "职工请假";
+
+    }
+
+    public void OnClickLeaveApprovalPanelBtn()
+    {
+        _rightPanel.GetComponent<RightPanelManager>().ActivePanel("LeaveApprovalPanel");
+        _currentLocationText.GetComponent<Text>().text = "请假审批";
     }
     #endregion
 }

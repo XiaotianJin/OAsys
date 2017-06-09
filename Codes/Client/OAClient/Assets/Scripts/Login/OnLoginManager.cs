@@ -63,7 +63,7 @@ public class OnLoginManager : MonoBehaviour {
 
     void LoadMainScene()
     {
-        SceneManager.LoadScene("Commit");
+        SceneManager.LoadScene("Cuixiaoliang");
     }
 
 	// Use this for initialization
