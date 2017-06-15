@@ -25,7 +25,7 @@ public class LeftPanelManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		
+		////asdfasfasdfasdf
 	}
 
     #region InternalFunc
