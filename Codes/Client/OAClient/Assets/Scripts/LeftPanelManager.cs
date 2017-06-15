@@ -20,6 +20,8 @@ public class LeftPanelManager : MonoBehaviour
 	void Start ()
     {
 		Initialize();
+        //Test
+        
 	}
 	
 	// Update is called once per frame
